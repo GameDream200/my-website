@@ -1,4 +1,4 @@
-/* Apologies for the bad CSS. I still need to actually learn it LOL */
+/* If you're seeing this, I apologize for the bad CSS. I still need to actually learn it LOL */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -47,6 +47,8 @@ h2 {
     font-family: IBMPlexMonoBold;
     font-size: clamp(1.5rem, 15vw - 2rem, 2rem);
 }
+
+/* I have no idea how exactly the font size things work ↑ */
 
 a:link {
     color: #89b4fa;

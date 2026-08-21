@@ -1,0 +1,83 @@
+/* Apologies for the bad CSS. I still need to actually learn it LOL */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #cdd6f4;
+    background-color: #1e1e2e;
+    
+}
+
+header {
+    background-color: #181825;
+    text-align: center;
+    padding: 1px;
+    border-radius: 8px;
+    font-family: IBMPlexMonoBold;
+}
+
+.buttonsTop {
+    text-align: left;
+}
+
+@font-face {
+    font-family: IBMPlexMonoRegular;
+    src: url(../Assets/IBMPlexMono-Regular.ttf)
+}
+
+@font-face {
+    font-family: IBMPlexMonoMedium;
+    src: url(../Assets/IBMPlexMono-Medium.ttf)
+}
+
+@font-face {
+    font-family: IBMPlexMonoBold;
+    src: url(../Assets/IBMPlexMono-Bold.ttf)
+}
+
+p {
+    font-family: IBMPlexMonoRegular;
+    font-size: clamp(1rem, 15vw - 2rem, 1.5rem);
+}
+
+h1 {
+    font-size: clamp(2rem, 20vw - 3rem, 3rem);
+}
+
+h2 {
+    font-family: IBMPlexMonoBold;
+    font-size: clamp(1.5rem, 15vw - 2rem, 2rem);
+}
+
+a:link {
+    color: #89b4fa;
+}
+
+a:visited {
+    color: #b4befe;
+}
+
+button {
+    transition-duration: 0.25s;
+    border: 0px;
+    border-radius: 12px;
+    color: #1e1e2e;
+    background-color: #cba6f7;
+    padding: 8px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: clamp(1rem, 15vw - 2rem, 1.5rem);
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: IBMPlexMonoMedium;
+}
+
+button:hover {
+    background-color: rgb(183, 146, 227);
+}
+
+@media screen and (max-width: 600px) {
+    .buttonsTop {
+        text-align: center;
+    }
+}

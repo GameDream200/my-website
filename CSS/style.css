@@ -3,8 +3,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #cdd6f4;
-    background-color: #1e1e2e;
-    
+    background-color: rgb(30, 30, 46);
+
+    margin: 0;
 }
 
 header {
@@ -62,7 +63,7 @@ button {
     transition-duration: 0.25s;
     border: 0px;
     border-radius: 12px;
-    color: #1e1e2e;
+    color: rgb(30, 30, 46);
     background-color: #cba6f7;
     padding: 8px 50px;
     text-align: center;
@@ -76,6 +77,48 @@ button {
 
 button:hover {
     background-color: rgb(173, 136, 217);
+}
+
+.homepageHeader {
+    background-image: linear-gradient(to bottom, rgba(30, 30, 46, 0), rgba(30, 30, 46, 1)), url(../Assets/Homepage_Banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-color: rgb(24, 24, 37);
+    text-align: center;
+    padding: 50px;
+    border-radius: 0px;
+    font-family: IBMPlexMonoBold;
+
+    text-shadow: 0px 0px 20px #000;
+    
+}
+
+.mainBody {
+    margin-inline: 24px;
+}
+
+.bjsHeader {
+    background-image: linear-gradient(to bottom, rgba(30, 30, 46, 0), rgba(30, 30, 46, 1)), url(../Assets/Banner_BJS.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-color: rgb(24, 24, 37);
+    text-align: center;
+    padding: 25px;
+    border-radius: 0px;
+    font-family: IBMPlexMonoBold;
+
+    text-shadow: 0px 0px 20px #000;
+}
+
+.bjsHeader img {
+    width: 75vw;
+    height: 25vh;
+
+    object-fit: contain;
 }
 
 @media screen and (max-width: 600px) {

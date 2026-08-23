@@ -102,6 +102,20 @@ button:hover {
     margin-inline: 24px;
 }
 
+.gameInfo {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.gameInfo p {
+    margin-block: 0px;
+    margin-right: 4px;
+}
+
 .subpageHeader {
     background-image: linear-gradient(to bottom, rgba(30, 30, 46, 0), rgba(30, 30, 46, 1)), url(../Assets/Images/temp_img.png);
     background-repeat: no-repeat;

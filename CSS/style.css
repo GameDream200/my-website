@@ -22,17 +22,17 @@ header {
 
 @font-face {
     font-family: IBMPlexMonoRegular;
-    src: url(../Assets/IBMPlexMono-Regular.ttf)
+    src: url(../Assets/Fonts/IBMPlexMono-Regular.ttf)
 }
 
 @font-face {
     font-family: IBMPlexMonoMedium;
-    src: url(../Assets/IBMPlexMono-Medium.ttf)
+    src: url(../Assets/Fonts/IBMPlexMono-Medium.ttf)
 }
 
 @font-face {
     font-family: IBMPlexMonoBold;
-    src: url(../Assets/IBMPlexMono-Bold.ttf)
+    src: url(../Assets/Fonts/IBMPlexMono-Bold.ttf)
 }
 
 p {
@@ -47,6 +47,10 @@ h1 {
 h2 {
     font-family: IBMPlexMonoBold;
     font-size: clamp(1.5rem, 15vw - 2rem, 2rem);
+}
+
+.centerH2 {
+    text-align: center;
 }
 
 /* I have no idea how exactly the font size things work ↑ */
@@ -80,7 +84,7 @@ button:hover {
 }
 
 .homepageHeader {
-    background-image: linear-gradient(to bottom, rgba(30, 30, 46, 0), rgba(30, 30, 46, 1)), url(../Assets/Homepage_Banner.png);
+    background-image: linear-gradient(to bottom, rgba(30, 30, 46, 0), rgba(30, 30, 46, 1)), url(../Assets/Images/banner_homepage.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -92,15 +96,14 @@ button:hover {
     font-family: IBMPlexMonoBold;
 
     text-shadow: 0px 0px 20px #000;
-    
 }
 
 .mainBody {
     margin-inline: 24px;
 }
 
-.bjsHeader {
-    background-image: linear-gradient(to bottom, rgba(30, 30, 46, 0), rgba(30, 30, 46, 1)), url(../Assets/Banner_BJS.png);
+.subpageHeader {
+    background-image: linear-gradient(to bottom, rgba(30, 30, 46, 0), rgba(30, 30, 46, 1)), url(../Assets/Images/temp_img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -114,15 +117,76 @@ button:hover {
     text-shadow: 0px 0px 20px #000;
 }
 
-.bjsHeader img {
+.subpageHeader img {
     width: 75vw;
     height: 25vh;
 
     object-fit: contain;
 }
 
+/* Subpage Header Variations */
+
+#bjsHeader {
+    background-image: linear-gradient(to bottom, rgba(30, 30, 46, 0), rgba(30, 30, 46, 1)), url(../Assets/Images/Games/Banner_BJS.png);
+}
+
+#mystuffHeader {
+    background-image: linear-gradient(to bottom, rgba(30, 30, 46, 0), rgba(30, 30, 46, 1)), url(../Assets/Images/banner_myStuff.png);
+}
+
 @media screen and (max-width: 600px) {
     .buttonsTop {
         text-align: center;
     }
+}
+
+.gamesContainer {
+    padding-top: 24px;
+    padding-bottom: 50px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.gameFrame {
+    transition-duration: 0.25s;
+    border-radius: 8px;
+    border: 3px solid rgba(255, 255, 255, .5);
+    height: 150px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../Assets/Images/temp_img.png);
+    background-position: center;
+    background-size: cover;
+    color: #000;
+}
+
+.gameFrame img {
+    height: 125px;
+    width: 225px;
+
+    object-fit: contain;
+}
+
+.gameButton:hover {
+    border: 3px solid rgba(255, 255, 255, .75);
+}
+
+/* Game Specific Buttons */
+
+#bjsButton {
+    background-image: url(../Assets/Images/Games/Banner_BJS.png);
+}
+
+#leButton {
+    background-image: url(../Assets/Images/Games/background_lithiumExpedition.png);
+}
+
+#atcButton {
+    background-image: url(../Assets/Images/Games/background_atc.png);
 }

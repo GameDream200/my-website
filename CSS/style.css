@@ -222,6 +222,10 @@ button:hover {
     background-image: url(../Assets/Images/Games/background_atc.png);
 }
 
+#unrevealedButton {
+    background-image: url(../Assets/Images/hmm.png);
+}
+
 @media (max-width: 600px) {
     .buttonsTop {
         text-align: center;

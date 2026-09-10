@@ -165,7 +165,7 @@ button:hover {
 /* Subpage Header Variations */
 
 #bjsHeader {
-    background-image: linear-gradient(to bottom, rgba(30, 30, 46, 0), rgba(30, 30, 46, 1)), url(../Assets/Images/Games/banner_BJS.png);
+    background-image: linear-gradient(to bottom, rgba(30, 30, 46, 0), rgba(30, 30, 46, 1)), url(../Assets/Images/Games/Banner_BJS.png);
 }
 
 #atcHeader {
@@ -217,7 +217,7 @@ button:hover {
 /* Game Specific Buttons */
 
 #bjsButton {
-    background-image: url(../Assets/Images/Games/banner_BJS.png);
+    background-image: url(../Assets/Images/Games/Banner_BJS.png);
 }
 
 #leButton {

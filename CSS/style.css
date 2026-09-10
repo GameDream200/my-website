@@ -45,6 +45,7 @@ h1 {
 }
 
 h2 {
+    text-shadow: #000 0px 0px 16px;
     font-family: IBMPlexMonoBold;
     font-size: clamp(1.5rem, 15vw - 2rem, 2rem);
 }
@@ -126,9 +127,12 @@ button:hover {
     margin: 5px;
     width: 360px;
     align-content: center;
+    filter: drop-shadow(rgba(0, 0, 0, 0.75) 0px 0px 10px);
 }
 
 .screenshotItem img {
+    border: 0px;
+    border-radius: 8px;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -152,6 +156,8 @@ button:hover {
 .subpageHeader img {
     width: 75vw;
     height: 25vh;
+
+    filter: drop-shadow(rgba(0, 0, 0, 0.75) 0px 0px 15px);
 
     object-fit: contain;
 }

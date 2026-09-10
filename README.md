@@ -1,2 +1,2 @@
 # Website Test
-Just a first project thing for trying out HTML and CSS. Nothing serious.
+Personal website. Also to figure out a small bit of HTML and CSS. Nothing much.
